@@ -33,10 +33,6 @@ P{
     border-radius: 8px;
     outline: 0;
     border: 0;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
     color: white;
     font-family: 'Nunito Sans', sans-serif;
     padding: 15px;
@@ -82,10 +78,7 @@ P{
     text-align: center;
     padding: 20px 0;
     transform: translate(-50% , -50%);
-    -webkit-transform: translate(-50% , -50%);
-    -moz-transform: translate(-50% , -50%);
-    -ms-transform: translate(-50% , -50%);
-    -o-transform: translate(-50% , -50%);
+    
 }
 
 .DonateText{
@@ -135,14 +128,20 @@ width: 100%;
     border-radius: 16px;
     margin: 10px;
     padding: 30px;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -ms-border-radius: 16px;
-    -o-border-radius: 16px;
+    
 }
+
 .AmountOfMoney div p{
     font-size: 30px;
     color: black;
+}
+.AmountOfMoney .border {
+    background: rgb(247, 185, 185);
+    color: red;
+    border: 2px solid orangered;
+}
+.AmountOfMoney .border p{
+    color: red;
 }
 
 input{
@@ -177,23 +176,84 @@ input{
     transform: translate(-50%, -50%);
     margin: 20px 10px;
     background: transparent;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
 }
 .Plans div{
  width: 400px;
  height: auto;
  background: white;
  margin: 10px;
- text-align: left; 
-    padding: 20px 15px;
+ text-align: left;
+ padding: 20px 15px;
+ border-radius: 16px;
+ background-color: aqua;
+}
+.Plans div h3{
+    font-size: 25px;
+    margin: 10px 0;
+    font-weight: bold;
 }
 .Plans div img{
     width: 80px;
     height: 80px;
    
 }
-
+.Plans .plansDiv2{
+    background: chocolate;
+    color: white;
+}
+.Plans .plansDiv3{
+    background: rgb(129, 100, 3);
+    color: white;
+}
 /*----DonatePlan end---*/
+
+
+/*----overview start---*/
+
+#overview{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: gray;
+    height: 60px;
+}
+.overviews{
+    position: absolute;
+    width: 95%;
+    left: 50%;
+    top: 5%;
+    height: 50px;
+    background: rgb(179, 174, 174);
+    transform: translate(-50%, -50%);
+   
+}
+/*----overview end---*/
+#getUpdate{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    align-items: center;
+
+}
+.getUpdates{
+    display: flex;
+    width: 80%;
+    background: wheat;
+    position: absolute;
+    padding: 10px 100px;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.getUpdates input{
+    width: 800px;
+    padding: 15px;
+    border: 1px solid gray;
+    text-align: left;
+}
+.getUpdates .btn{
+    border-radius: none;
+}
