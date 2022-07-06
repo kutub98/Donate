@@ -159,8 +159,9 @@ input{
 
 /*----DonatePlan start---*/
 #DonatePlan{
-    margin: 100px 0;
+    margin: 85px 0px 10px 0;
     width: 100%;
+    padding: 20px;
     position: relative;
     background: rgb(226, 225, 223);
 }
@@ -172,7 +173,7 @@ input{
     width: 90%;
     padding: 0;
     left: 50%;
-    top: 50%;
+    top: 56%;
     transform: translate(-50%, -50%);
     margin: 20px 10px;
     background: transparent;
@@ -212,25 +213,94 @@ input{
 
 #overview{
     width: 100%;
-    height: auto;
     position: relative;
-    background: gray;
-    height: 60px;
+    margin: 20px 0;
+    height: 600px;
+    text-align: center;
+}#overview h1{
+    font-size: 50px;
+    color: rgb(2, 1, 0);
+    font-family: 'Lobster', cursive;
+    margin: 20px 0;
 }
-.overviews{
+.OverViewImages{
     position: absolute;
     width: 95%;
     left: 50%;
-    top: 5%;
-    height: 50px;
-    background: rgb(179, 174, 174);
+    top: 60%;
+    height: auto;
     transform: translate(-50%, -50%);
-   
+    display: flex;
+}
+.OverViewImages .img{
+    width: 50%;
+    overflow: hidden;
+    height: 450px;
+    margin: 0 10px;
+    background: rgb(255, 255, 255);
+}
+.OverViewImages .imgText{
+    width: 50%;
+    text-align: left;
+    height: 450px;
+    border: 2px solid orangered;
+    margin: 0 10px;
+    padding: 15px;
+}
+
+#overview .OverViewImages .imgText h1{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 45px;
+    margin: 10px 0;
+}
+#overview .OverViewImages .imgText p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 25px;
+    margin: 10px 0px 20px 0;
+}
+
+.imgbox1,
+.imgbox2{
+    display: flex;
+}
+.imgbox1 .img1,
+.imgbox1 .img2,
+.imgbox2 .img3,
+.imgbox2 .img4{
+    width: 50%;
+    height: 210px;
+    margin: 5px;
+}
+.imgbox1 .img1{
+    height: 250px;
+    width: 40%;
+}
+.imgbox1 .img2{
+    height: 210px;
+    width: 60%;
+}
+.imgbox2 .img3{
+    height: 190px;
+    width: 60%;
+    margin-top: -5px;
+}
+.imgbox2 .img4{
+    height: 220px;
+    width: 60%;
+    margin-top: -30px;
+}
+.imgbox2 img,
+.imgbox1 img{
+    height: 100%;
+    width:  100%;
+    padding: 8px;
 }
 /*----overview end---*/
+
+/*----GetUpdate part  start---*/
 #getUpdate{
     width: 100%;
-    height: 300px;
+    height: 200px;
     position: relative;
     align-items: center;
 
@@ -255,5 +325,33 @@ input{
     text-align: left;
 }
 .getUpdates .btn{
-    border-radius: none;
+    border-radius: 0;
 }
+/*----GetUpdate part  end---*/
+
+/*----footer part start---*/
+#FooterPartStart{
+    height: 200px;
+    width: 100%;
+    padding: 60px 0;
+    align-items: center;
+    text-align: center;
+    background: rgb(20, 14, 14);
+}
+#FooterPartStart h1{
+    color: orangered;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+}
+#FooterPartStart p{
+    color: white;
+    font-size: 18px;
+    margin: 10px 0;
+}
+#FooterPartStart p span{
+    color: orangered;
+
+}
+
+/*----footer part end---*/
